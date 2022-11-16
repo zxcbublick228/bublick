@@ -10,7 +10,7 @@ class MenuItem(models.Model):
     TYPE = [
         ('BRK', 'Завтрак'),
         ('LUN', 'Обед'),
-        ('DIN', 'Ужин'),
+        ('DIN', 'Ужин')
     ]
 
     type = models.CharField(choices=TYPE, max_length=3, default='BRK', verbose_name='Тип')
